@@ -1,0 +1,13 @@
+{
+  "resourceName": "matlabuploads3",
+  "policyUUID": "6925f01a",
+  "bucketName": "matlabuploads3",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ"
+  ],
+  "triggerFunction": "S3Triggeraf278fba",
+  "groupAccess": {}
+}

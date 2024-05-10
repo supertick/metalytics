@@ -1,0 +1,38 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-matlabupload-dev-f5639-authRole",
+      "UnauthRoleArn": "arn:aws:iam::041107126191:role/amplify-matlabupload-dev-f5639-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::041107126191:role/amplify-matlabupload-dev-f5639-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-matlabupload-dev-f5639-deployment",
+      "UnauthRoleName": "amplify-matlabupload-dev-f5639-unauthRole",
+      "StackName": "amplify-matlabupload-dev-f5639",
+      "StackId": "arn:aws:cloudformation:us-east-1:041107126191:stack/amplify-matlabupload-dev-f5639/9f817190-0d75-11ef-90fb-12eb56da5593",
+      "AmplifyAppId": "d29klc0f5g9u1u"
+    },
+    "categories": {
+      "auth": {
+        "matlabuploadbf2cde1b": {}
+      },
+      "api": {
+        "matlabupload": {}
+      },
+      "function": {
+        "S3Triggeraf278fba": {
+          "deploymentBucketName": "amplify-matlabupload-dev-f5639-deployment",
+          "s3Key": "amplify-builds/S3Triggeraf278fba-4c314635415473397264-build.zip"
+        }
+      },
+      "storage": {
+        "matlabuploads3": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d29klc0f5g9u1u",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}
