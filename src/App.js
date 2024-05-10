@@ -36,39 +36,42 @@ function App({ signOut, user }) {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#b3e5fc' }}>
       <div style={{ textAlign: 'center' }}>
-        <h1>MatLab Upload App</h1>
+        <img src="/metalytics.jpg" alt="logo" />
+        <h1>MFA Light Upload</h1>
+        {/*
         <h3>Hello {user.username}</h3>
-        <Button variant="contained" color="primary" onClick={signOut}>
-          Sign out
-        </Button>
-        <br />
-        <br />
-        <label htmlFor="contained-button-file">
-          <StyledInput
-            accept="image/*"
-            id="contained-button-file"
-            multiple
-            type="file"
-            onChange={(e) => {
-              setFileData(e.target.files[0]);
-              setFileStatus(false); // Reset upload status on new file selection
-            }}
-          />
-          <Button variant="contained" component="span">
-            Choose File
-          </Button>
-        </label>
-        {fileData && (
-          <div>
+        */}
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '10px' }}>
+          <label htmlFor="contained-button-file">
+            <StyledInput
+              accept="image/*"
+              id="contained-button-file"
+              multiple
+              type="file"
+              onChange={(e) => {
+                setFileData(e.target.files[0]);
+                setFileStatus(false); // Reset upload status on new file selection
+              }}
+            />
+            <Button variant="contained" component="span">
+              Choose File
+            </Button>
+          </label>
+          {fileData && (
             <Button variant="contained" color="secondary" onClick={uploadFile}>
               Upload File
             </Button>
-          </div>
-        )}
+          )}
+                    <Button variant="contained" color="primary" onClick={signOut}>
+            Sign out
+          </Button>
+
+        </div>
         {fileStatus && <p>File uploaded successfully</p>}
       </div>
     </div>
   );
+  
 }
 
 export default withAuthenticator(App);
