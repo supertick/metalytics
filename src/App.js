@@ -44,7 +44,7 @@ function App({ signOut, user }) {
         <div style={{ display: 'flex', justifyContent: 'center', gap: '10px' }}>
           <label htmlFor="contained-button-file">
             <StyledInput
-              accept="image/*"
+              accept=".xlsx,.xls"
               id="contained-button-file"
               multiple
               type="file"
@@ -62,16 +62,14 @@ function App({ signOut, user }) {
               Upload File
             </Button>
           )}
-                    <Button variant="contained" color="primary" onClick={signOut}>
+          <Button variant="contained" color="primary" onClick={signOut}>
             Sign out
           </Button>
-
         </div>
         {fileStatus && <p>File uploaded successfully</p>}
       </div>
     </div>
   );
-  
 }
 
 export default withAuthenticator(App);
