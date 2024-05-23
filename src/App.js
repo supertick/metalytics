@@ -66,7 +66,8 @@ function App({ signOut, user }) {
             Sign out
           </Button>
         </div>
-        {fileStatus && <p>File uploaded successfully</p>}
+        {fileStatus && <p>File uploaded successfully</p>}<br/>
+        version 0.0.1
       </div>
     </div>
   );
