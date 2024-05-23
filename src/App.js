@@ -19,7 +19,7 @@ function App({ signOut, user }) {
   const uploadFile = async () => {
     if (!fileData) return; // Ensure there is file data to upload
 
-    const filePath = `public/album/${new Date().getFullYear()}/${fileData.name}`;
+    const filePath = `public/upload/xls/${fileData.name}`;
 
     try {
       const result = await uploadData({
