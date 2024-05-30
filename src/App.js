@@ -37,7 +37,7 @@ function App({ signOut, user }) {
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#b3e5fc' }}>
       <div style={{ textAlign: 'center' }}>
         <img src="/metalytics.jpg" alt="logo" />
-        <h1>MFA Light Upload</h1>
+        <h1>MFALite Upload</h1>
         {/*
         <h3>Hello {user.username}</h3>
         */}
